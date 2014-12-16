@@ -1,0 +1,25 @@
+{
+  "name": "audiowaveform-data",
+  "version": "0.0.1",
+  "description": "A small library providing json output from audiowaveform generated data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chanlee/audiowaveform-data"
+  },
+  "keywords": [
+    "waveform",
+    "audiowaveform",
+    "webaudio"
+  ],
+  "author": "Wonchan Lee <wonchan.lee@gmail.com> (http://chanlee.github.io/)",
+  "licenses": [
+    {
+    "type": "GPL",
+    "url": "http://www.gnu.org/licenses/"
+    }
+  ]
+}
