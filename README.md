@@ -9,4 +9,4 @@
 TODO
 
 ## License
-MIT
+GPL
