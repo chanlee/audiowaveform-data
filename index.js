@@ -1,13 +1,12 @@
 /**
- * audiowaveform-data-js
+ * audiowaveform-data
  */
-var path = require('path');
 var fs = require('fs');
 
-module.exports = function(baseDir, filename, callback) {
+module.exports = function(filename, callback) {
 
-    var source = path.join(baseDir, filename);
-    var target = path.join(baseDir, filename+'.json');
+    var source = filename;
+    var target = filename+'.json';
 
     var audiowave = require('child_process').spawn(
         'audiowaveform',
@@ -20,6 +19,7 @@ module.exports = function(baseDir, filename, callback) {
                 callback(err);
             } else {
                 callback(null, data);
+                fs.unlinkSync(target);
             }
         });
     });
