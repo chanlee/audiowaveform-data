@@ -4,7 +4,7 @@
 var path = require('path');
 var fs = require('fs');
 
-module.exports = function(exec, baseDir, filename, callback) {
+module.exports = function(baseDir, filename, callback) {
 
     var source = path.join(baseDir, filename);
     var target = path.join(baseDir, filename+'.json');

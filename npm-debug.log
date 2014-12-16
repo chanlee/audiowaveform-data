@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/chanlee/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/chanlee/.npm/audiowaveform-data/0.0.1/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/chanlee/.npm/audiowaveform-data/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish audiowaveform-data@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/chanlee/.npm/1f1177db-tar.lock
+16 silly lockFile 4b658d96-owaveform-data-0-0-1-package-tgz tar:///home/chanlee/.npm/audiowaveform-data/0.0.1/package.tgz
+17 verbose lock tar:///home/chanlee/.npm/audiowaveform-data/0.0.1/package.tgz /home/chanlee/.npm/4b658d96-owaveform-data-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 4b658d96-owaveform-data-0-0-1-package-tgz tar:///home/chanlee/.npm/audiowaveform-data/0.0.1/package.tgz
+21 silly lockFile 4b658d96-owaveform-data-0-0-1-package-tgz tar:///home/chanlee/.npm/audiowaveform-data/0.0.1/package.tgz
+22 silly lockFile 89a3d202-audiowaveform-data-0-0-1-package /home/chanlee/.npm/audiowaveform-data/0.0.1/package
+23 verbose lock /home/chanlee/.npm/audiowaveform-data/0.0.1/package /home/chanlee/.npm/89a3d202-audiowaveform-data-0-0-1-package.lock
+24 silly lockFile 89a3d202-audiowaveform-data-0-0-1-package /home/chanlee/.npm/audiowaveform-data/0.0.1/package
+25 silly lockFile 89a3d202-audiowaveform-data-0-0-1-package /home/chanlee/.npm/audiowaveform-data/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'audiowaveform-data',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'A small library providing json output from audiowaveform generated data.',
+28 silly publish   main: 'index.js',
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'git://github.com/chanlee/audiowaveform-data' },
+28 silly publish   keywords: [ 'waveform', 'audiowaveform', 'webaudio' ],
+28 silly publish   author:
+28 silly publish    { name: 'Wonchan Lee',
+28 silly publish      email: 'wonchan.lee@gmail.com',
+28 silly publish      url: 'http://chanlee.github.io/' },
+28 silly publish   licenses: [ { type: 'GPL', url: 'http://www.gnu.org/licenses/' } ],
+28 silly publish   readme: '# AudioWaveformData-js\n**audiowaveformdata-js** is a wrapper to grep json data from [audiowaveform](https://github.com/bbcrd/audiowaveform) output.\n\n## Installation\n1. Install [audiowaveform](https://github.com/bbcrd/audiowaveform) and add your PATH environment.\n2. npm install audiowaveform-js\n\n## Usage\nTODO\n\n## License\nGPL\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '76fc6473c7a66e17319cbbb97b83ef95416ac93f',
+28 silly publish   bugs: { url: 'https://github.com/chanlee/audiowaveform-data/issues' },
+28 silly publish   homepage: 'https://github.com/chanlee/audiowaveform-data',
+28 silly publish   _id: 'audiowaveform-data@0.0.1',
+28 silly publish   _shasum: '711aeed36d184c91e02d6faff4069fb5564db37b',
+28 silly publish   _from: '.' }
+29 verbose request where is /audiowaveform-data
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id e294bf2c427d8954
+32 verbose url raw /audiowaveform-data
+33 verbose url resolving [ 'https://registry.npmjs.org/', './audiowaveform-data' ]
+34 verbose url resolved https://registry.npmjs.org/audiowaveform-data
+35 verbose request where is https://registry.npmjs.org/audiowaveform-data
+36 info trying registry request attempt 1 at 11:58:13
+37 http PUT https://registry.npmjs.org/audiowaveform-data
+38 http 403 https://registry.npmjs.org/audiowaveform-data
+39 verbose headers { date: 'Tue, 16 Dec 2014 02:58:10 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '2978',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-ty67-TYO',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1418698690.175578,VS0,VE130',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.0.1
+41 error old={"name":"audiowaveform-data","version":"0.0.1","description":"A small library providing json output from audiowaveform generated data.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git://github.com/chanlee/audiowaveform-data"},"keywords":["waveform","audiowaveform","webaudio"],"author":{"name":"Wonchan Lee","email":"wonchan.lee@gmail.com","url":"http://chanlee.github.io/"},"licenses":[{"type":"GPL","url":"http://www.gnu.org/licenses/"}],"gitHead":"5d427651f17716b1d9202693b35a4d9b6a117dc9","bugs":{"url":"https://github.com/chanlee/audiowaveform-data/issues"},"homepage":"https://github.com/chanlee/audiowaveform-data","_id":"audiowaveform-data@0.0.1","_shasum":"8e791728e808d9f2bb5dc3887737c624f37afe94","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"chanlee","email":"wonchan.lee@gmail.com"},"maintainers":[{"name":"chanlee","email":"wonchan.lee@gmail.com"}],"dist":{"shasum":"8e791728e808d9f2bb5dc3887737c624f37afe94","tarball":"http://registry.npmjs.org/audiowaveform-data/-/audiowaveform-data-0.0.1.tgz"}}
+41 error new={"name":"audiowaveform-data","version":"0.0.1","description":"A small library providing json output from audiowaveform generated data.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git://github.com/chanlee/audiowaveform-data"},"keywords":["waveform","audiowaveform","webaudio"],"author":{"name":"Wonchan Lee","email":"wonchan.lee@gmail.com","url":"http://chanlee.github.io/"},"licenses":[{"type":"GPL","url":"http://www.gnu.org/licenses/"}],"readme":"# AudioWaveformData-js\u000a**audiowaveformdata-js** is a wrapper to grep json data from [audiowaveform](https://github.com/bbcrd/audiowaveform) output.\u000a\u000a## Installation\u000a1. Install [audiowaveform](https://github.com/bbcrd/audiowaveform) and add your PATH environment.\u000a2. npm install audiowaveform-js\u000a\u000a## Usage\u000aTODO\u000a\u000a## License\u000aGPL\u000a","readmeFilename":"README.md","gitHead":"76fc6473c7a66e17319cbbb97b83ef95416ac93f","bugs":{"url":"https://github.com/chanlee/audiowaveform-data/issues"},"homepage":"https://github.com/chanlee/audiowaveform-data","_id":"audiowaveform-data@0.0.1","_shasum":"711aeed36d184c91e02d6faff4069fb5564db37b","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"chanlee","email":"wonchan.lee@gmail.com"},"maintainers":[{"name":"chanlee","email":"wonchan.lee@gmail.com"}],"dist":{"shasum":"711aeed36d184c91e02d6faff4069fb5564db37b","tarball":"http://registry.npmjs.org/audiowaveform-data/-/audiowaveform-data-0.0.1.tgz"}}: audiowaveform-data
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.13.0-24-generic
+44 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error cwd /home/chanlee/audiowaveform-data
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
