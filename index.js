@@ -2,20 +2,26 @@
  * audiowaveform-data-js
  */
 var path = require('path');
+var fs = require('fs');
 
 module.exports = function(exec, baseDir, filename, callback) {
 
     var source = path.join(baseDir, filename);
     var target = path.join(baseDir, filename+'.json');
 
-    var exec = require('child_process').exec;
-    var child = exec('audiowaveform -i ' + source + ' -o ' + target,
-                    function(error, stdout, stderr) {
-                        if (error !== null) {
-                            callback(error);
-                        } else {
-                            callback(null, stdout);
-                        }
-                    });
+    var audiowave = require('child_process').spawn(
+        'audiowaveform',
+        ['-i', source, '-o', target]
+    );
+
+    audiowave.on('close', function(code, signal) {
+        fs.readFile(target, function(err, data) {
+            if (err !== null) {
+                callback(err);
+            } else {
+                callback(null, data);
+            }
+        });
+    });
 
 };
